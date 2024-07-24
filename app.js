@@ -46,7 +46,7 @@ app.locals.moment = require("moment");
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(
     session({
         secret: process.env.SECRET,
