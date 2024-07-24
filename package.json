@@ -19,7 +19,7 @@
     "start": "node app.js"
   },
   "engines": {
-    "node": "17.3.1"
+    "node": "20.x"
   },
   "name": "gamehoc",
   "description": "## GameHOC Pitch: * **Team: It Works on Local**     - Joshua Hovis     - David Oliveros     - Sam Cowing",
