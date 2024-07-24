@@ -22,13 +22,12 @@ const fetch = (...args) =>
 /*        Mongoose Config        */
 /*********************************/
 const mongoose = require("mongoose");
-const mongoUri =
-    process.env.NODE_ENV === "production"
-        ? process.env.MONGODB_URI_PRODUCTION
-        : process.env.MONGODB_URI_LOCAL;
+const mongoURI =
+    process.env.MONGODBURI ||
+    "mongodb+srv://joshuahovis3:passwordTEST@gamehoc.yifb7wi.mongodb.net/?retryWrites=true&w=majority&appName=gamehoc";
 
 mongoose
-    .connect(mongoUri, {
+    .connect(mongoURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
