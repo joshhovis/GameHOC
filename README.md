@@ -1,8 +1,4 @@
-# Project Two
-
-## GameHOC Project:
-
--   **Team: It Works on Local**
+-   **Team:**
 
     -   Joshua Hovis
     -   David Oliveros
@@ -17,7 +13,7 @@
     -   A comprehensive database of games for users to browse by categories and learn more about selected games. Users can make collections and then save games to specific collections of their choice. Collections can be deleted or modified by the user.
     -   Key to the game data is the RAWG.io API (GET https://api.rawg.io/api/).
 
-    Site link: (https://gamehoc1.herokuapp.com/)
+    Site link: (https://gamehoc.vercel.app/)
 
 -   **Screenshots**
 
@@ -26,9 +22,6 @@
     ![Insert Image here](https://i.imgur.com/mYkaUTD.png)
     ![Insert Image here](https://i.imgur.com/Ya2mZuo.png)
     ![Insert Image here](https://i.imgur.com/QSBToYC.png)
-
--   **How to install**
-    Install For install, simply fork and clone the github repository https://github.com/samcowing/GameHOC. Once on your local, install the technologies used below (with the exception of bootstrap with is already included).
 
 -   **Technologies Used**
 
@@ -50,13 +43,9 @@
 
     -   Parallel fetch request
     -   Add to collections update from GET to POST
-    -   Login user notifications (especially for login-fail)
+    -   Login user notifications
     -   Search bar functionality
     -   Adding review to game and viewing other reviews on game detail page
-    -   Related games (games in series or most matching genres
-    -   Update game rating based off of review rating
-    -   Added homepage features
-    -   Footer with API credit
 
 -   **ERD**
 

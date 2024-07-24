@@ -37,16 +37,14 @@ mongoose
 /************************/
 /*        Config        */
 /************************/
-// app.set("view engine", "ejs");
-// app.use(express.static("public"));
 app.locals.moment = require("moment");
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"));
 
 /****************************/
 /*        Middleware        */
 /****************************/
+app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -78,6 +76,9 @@ const query2 =
     "&metacritic=50,100";
 
 app.get("/", (req, res) => {
+    let topRated;
+    let newReleases;
+
     fetch(query).then((response) => {
         response
             .json()
